@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid black;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  .info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: yellow;
+    cursor: pointer;
+
+  }
+}
