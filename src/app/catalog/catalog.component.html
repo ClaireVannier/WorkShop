@@ -1,0 +1,59 @@
+<!-- méthode directive dans html -->
+
+<div class="product-container">
+  <div class="products">
+    <h2>Produits avec des prix à définir</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        <p *ngIf="product.price === null">{{ product.name }} prix à définir</p>
+      </li>
+    </ul>
+  </div>
+  <div class="products">
+    <h2>Produits en promotion</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        <p *ngIf="product.promo !== null">{{ product.name }} {{product.promo}} %</p>
+      </li>
+    </ul>
+  </div>
+  <div class="products">
+    <h2>Autres produits</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        <p *ngIf="product.price !== null && product.promo === null">
+        {{product.name}} {{product.price}} € {{product.promo}} %</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- affichage avec les méthodes dans le ts -->
+
+<!-- <h1>Catalogue de produit</h1>
+<div class="product-container">
+  <div class="products">
+    <h2>Produits avec des prix à définir</h2>
+    <ul>
+      <li *ngFor="let product of getProductWithoutPrice()">
+      {{product.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="products">
+    <h2>Produits en promotion</h2>
+    <ul>
+      <li *ngFor="let product of getProductWithPromo()">
+        {{product.name}}
+      </li>
+    </ul>
+  </div>
+  <div class="products">
+    <h2>Autres produits</h2>
+    <ul>
+      <li *ngFor="let product of getOtherProduct()">
+        {{product.name}} {{product.price}} € {{product.promo}} %
+      </li>
+    </ul>
+  </div>
+</div> -->
