@@ -1,6 +1,6 @@
 import { Student } from '../models/student.models';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-student-details',

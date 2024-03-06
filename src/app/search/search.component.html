@@ -1,4 +1,9 @@
 <form (ngSubmit)="submitSearch()">
-  <input type="text" [(ngModel)]="name" name="searchQuery" placeholder="Rechercher un étudiant">
+  <input
+    type="search"
+    [(ngModel)]="name"
+    name="search"
+    placeholder="Rechercher un étudiant"
+  />
   <button type="submit">Rechercher</button>
 </form>
