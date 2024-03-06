@@ -1,0 +1,48 @@
+form {
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+input {
+  border: 1px solid orange;
+}
+
+input.ng-touched {
+  border: 1px solid blue;
+}
+
+input.ng-valid {
+  border: 1px solid green;
+}
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+
+button {
+  background-color: peachpuff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: orange;
+  border: 1px solid black;
+}
