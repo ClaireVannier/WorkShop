@@ -1,7 +1,9 @@
 <form (ngSubmit)="formSubmit(myForm)" #myForm="ngForm">
+
   <div>
     Le formulaire est valide ? {{ myForm.valid }} 
   </div>
+
   <input
     type="email"
     [(ngModel)]="form.email"
@@ -9,8 +11,12 @@
     required
     #emailRef="ngModel"
   />
-  <div *ngIf="emailRef.errors && emailRef.errors['required']">
+
+  <div *ngIf="emailRef.errors">
     L'email n'est pas valide.
+  </div>
+  <div *ngIf="emailRef.errors?.['required']">
+    L'email est requis.
   </div>
 
   <input
@@ -21,14 +27,14 @@
     minlength="6"
     #passwordRef="ngModel"
   />
-  <div *ngIf="emailRef.errors?.['required']">
-    L'email est requis.
-  </div>
+  
   <div *ngIf="passwordRef.errors?.['required']">
     Le mot de passe est requis.
   </div>
   <div *ngIf="passwordRef.errors?.['minlength']">
     Le mot de passe doit contenir plus de 6 caractères.
   </div>
+
     <button type="submit">Se connecter</button>
+
 </form>
