@@ -1,0 +1,24 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  gap: 5px;
+  justify-content: center;
+
+
+  label input {
+    width: 50%;
+    margin: auto;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    width: 50%;
+    margin: auto;
+  }
+}
