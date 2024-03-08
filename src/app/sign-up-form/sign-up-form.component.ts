@@ -9,7 +9,7 @@ import { AbstractControl, FormBuilder, ReactiveFormsModule, ValidationErrors, Va
   templateUrl: './sign-up-form.component.html',
   styleUrl: './sign-up-form.component.scss'
 })
-export class WorkshopFormulaireComponent {
+export class SignUpFormComponent {
   formBuilder = inject(FormBuilder)
 
   signUpForm = this.formBuilder.group({
